@@ -52,8 +52,8 @@ public ArrayList getAutoNumbers(String entityName) throws BusinessException;
 14. 接口和实现类的命名：
 1）【强制】对于Persistence，mybatis配置文件xml以Mapper结尾， Java接口也以Mapper结尾。
 正例：``AutoNumberReadMapper.xml，AutoNumberReadMapper.java``
-2） 【强制】对于 Service，基于 SOA 的理念，暴露出来的服务一定是接口，内部的实现类用 Impl 的后缀与接口区别。
-正例：``AddressServiceImpl implements IAddressService``
+2） 【强制】对于 Service，基于 SOA 的理念，暴露出来的服务一定是接口，内部的实现类放在impl包中并无I前缀与接口区别。
+正例：``AddressService implements IAddressService``
 3）【强制】对于WS，类名以Rest结尾
 正例：``EmailRest``
 15. 【参考】枚举类名建议带上 Enum 后缀，枚举成员名称需要全大写，单词间用下划线隔开。
